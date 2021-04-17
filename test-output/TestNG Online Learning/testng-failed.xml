@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG Online Learning]">
+  <test name="Login test(failed)">
+    <classes>
+      <class name="dd_testcases.MyProfileTest">
+        <methods>
+          <include name="init"/>
+          <include name="QuitDriver"/>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- dd_testcases.MyProfileTest -->
+      <class name="dd_testcases.LoginTest">
+        <methods>
+          <include name="isSkip"/>
+          <include name="doLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- dd_testcases.LoginTest -->
+    </classes>
+  </test> <!-- Login test(failed) -->
+  <test name="Profile test(failed)">
+    <classes>
+      <class name="dd_testcases.MyProfileTest">
+        <methods>
+          <include name="init"/>
+          <include name="QuitDriver"/>
+          <include name="isSkip"/>
+          <include name="gotoProfile" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- dd_testcases.MyProfileTest -->
+      <class name="dd_testcases.LoginTest">
+        <methods>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- dd_testcases.LoginTest -->
+    </classes>
+  </test> <!-- Profile test(failed) -->
+</suite> <!-- Failed suite [TestNG Online Learning] -->
